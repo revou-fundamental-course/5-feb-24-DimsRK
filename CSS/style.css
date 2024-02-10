@@ -23,3 +23,8 @@ nav {
 #output-section {
     display: block;
 }
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
