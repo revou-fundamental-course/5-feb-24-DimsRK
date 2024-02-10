@@ -1,0 +1,25 @@
+h3, nav{
+    display: inline;
+    background-color: #BBC3A4;
+}
+
+nav>a {
+    text-decoration: none;
+    color: red;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -15px;
+}
+
+#input-section {
+    display: block;
+}
+
+#output-section {
+    display: block;
+}
