@@ -2,6 +2,26 @@ header {
     background-color: #EFF396;
 }
 
+footer {
+    background-color: #EFF396;
+    text-align: center;
+}
+
+footer>p>a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+footer>p>a:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+footer>p>a:active {
+    color: grey;
+}
+
 body {
     background-color: rgb(180, 180, 180);
 }
@@ -14,12 +34,13 @@ header>h3 {
 
 fieldset {
     margin-top: 60px;
-    border: #EFF396 solid 2px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    border: #EFF396 solid 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: rgb(241, 235, 235);
 }
 
 legend {
@@ -45,6 +66,7 @@ fieldset>p {
 }
 
 .input {
+    display: inline-block;
     border: #EFF396 solid 2px;
     outline: none;
     border-radius: 3px;
@@ -110,4 +132,10 @@ button {
     -moz-transform: translateY(3px);
     -ms-transform: translateY(3px);
     -o-transform: translateY(3px);
+}
+
+#explain {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
