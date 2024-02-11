@@ -1,19 +1,39 @@
-h3, nav{
+header {
+    background-color: #EFF396;
+}
+
+body {
+    background-color: rgb(180, 180, 180);
+}
+
+header>h3 {
     display: inline;
-    background-color: #BBC3A4;
+    vertical-align: top;
+    font-size: 30px;
 }
 
-nav>a {
-    text-decoration: none;
-    color: red;
-    margin-left: 10px;
+fieldset {
+    margin-top: 60px;
+    border: #EFF396 solid 2px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: -15px;
+legend {
+    background-color: #EFF396;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 5px;
+}
+
+fieldset>p {
+    padding: 5px;
 }
 
 #input-section {
@@ -24,7 +44,70 @@ nav {
     display: block;
 }
 
-.label {
+.input {
+    border: #EFF396 solid 2px;
+    outline: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin: 20px;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.resultButton {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#celcius-to-fahrenheit {
+    background-color: greenyellow;
+}
+
+#celcius-to-fahrenheit:hover {
+    background-color: rgb(129, 190, 36);
+    cursor: pointer;
+}
+
+#celcius-to-fahrenheit:active {
+    background-color: rgb(120, 175, 36);
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+}
+
+#fahrenheit-to-celcius {
+    background-color: rgb(236, 240, 38);
+}
+
+#fahrenheit-to-celcius:hover {
+    background-color: rgb(176, 179, 30);
+    cursor: pointer;
+}
+
+#fahrenheit-to-celcius:active {
+    background-color: rgb(119, 121, 25);
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
 }

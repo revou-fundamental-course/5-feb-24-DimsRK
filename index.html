@@ -8,31 +8,35 @@
 </head>
 <body>
     <header>
-    <h3> ini logo</h3>
+    <img src="../5-feb-24-DimsRK/Assets/temperature_icon-icons.com_65084.png" width="50px" alt="icon suhu">
     <h3>Kalkulator Celcius & Fahrenheit</h3>
-    <nav>
-        <a href="#formula">Rumus</a>
-        <a href="#function">Perhitungan</a>
-    </nav>
     </header>
     <main>
         <div id="formula">
             <fieldset>
                 <legend>Rumus Konversi Suhu Celcius & fahrenheit</legend>
-                    <p>disini rumus dari penghitungan celcius dan juga fahrenheit</p>
+                    <p>Untuk mengonversi suhu dari Celsius (°C) ke Fahrenheit (°F) atau sebaliknya, Anda dapat menggunakan rumus berikut:</p>
+                    <p>Untuk mengkonversi dari Celcius (C) ke Fahrenheit (F) :</p>
+                    <p>C = (F x 9/5) + 32</p>
+                    <p>Untuk mengkonversi dari Fahrenheit (F) ke Celcius (C) :</p>   
+                    <p>F = (C - 32) x 5/9</p>
             </fieldset>
         </div>
         <div id="function">
-            <label for="input-section" class="label">Input Suhu</label>
-            <input type="number" id="input-section" placeholder="Contoh : 25 atau 3.14">
+            <fieldset>
+            <legend><label for="input-section" class="label">Input Suhu</label></legend>
+            <input type="number" class="input" id="input-section" placeholder="Contoh : 25 atau 3.14">
+            </fieldset>
             <section class="resultButton">
               <button class="result" id="celcius-to-fahrenheit">Celsius ke Fahrenheit</button>
               <button class="result" id="fahrenheit-to-celcius">Fahrenheit Ke Celsius</button>
-            </section>
+            </section> 
         </div>
         <div id="conversion-result">
-            <label for="output-section" class="label">Hasil Konversi</label>
-            <input type="number" id="output-section" disabled>
+            <fieldset>
+            <legend><label for="output-section" class="label">Hasil Konversi</label></legend>
+            <input type="number" class="input" id="output-section" disabled>
+            </fieldset>
         </div>
     </main>
 </body>
