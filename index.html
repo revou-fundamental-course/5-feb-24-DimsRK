@@ -26,28 +26,31 @@
         <div id="function">
             <fieldset>
                 <legend><label for="input-section" class="label">Input Suhu</label></legend>
-                <input type="number" class="input" id="input-section" placeholder="Contoh : 25 atau 3.14">
+                <input type="number" class="input" id="input" placeholder="Contoh : 25 atau 3.14" value="">
             </fieldset>
             <section class="resultButton">
-                <button class="result" id="celcius-to-fahrenheit">Celsius ke Fahrenheit</button>
-                <button class="result" id="fahrenheit-to-celcius">Fahrenheit Ke Celsius</button>
+                <button class="result" id="celcius-to-fahrenheit" onclick="celciusToFahrenheit ()">Celsius ke Fahrenheit</button>
+                <button class="result" id="fahrenheit-to-celcius" onclick="fahrenheitToCelcius ()">Fahrenheit Ke Celsius</button>
+                <button class="result" id="reset-button" onclick="reset ()">Reset</button>
             </section> 
         </div>
         <div id="conversion-result">
             <fieldset>
                 <legend><label for="output-section" class="label">Hasil Konversi</label></legend>
-                <input type="number" class="input" id="output-section" disabled>
+                <p id="output"></p>
             </fieldset>
         </div>
-        <div id="explain">
+        <div id="explanation">
             <fieldset>
                 <legend>PENJELASAN</legend>
-                <p>ini penjelasan</p>
+                <p id="explain"></p>
             </fieldset>
-        </div>
-        <footer>
+        </div>   
+    </main>
+    <footer>
             <p>© 2024 Project Temperature Conversion | <a href="https://github.com/DimsRK" target="_blank"><img src="Assets/github_logo_icon_145252.png" width="13px" alt="github logo"> By: Dimas Restu Kumbayohni</a> . All rights reserved.</p>
         </footer>
-    </main>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>

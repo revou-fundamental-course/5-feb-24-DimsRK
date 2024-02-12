@@ -1,15 +1,19 @@
 header {
     background-color: #EFF396;
+    width: 100%;
 }
 
 footer {
     background-color: #EFF396;
     text-align: center;
+    width: 100%;
+    margin-top: 60px;
 }
 
 footer>p>a {
     text-decoration: none;
     font-style: italic;
+    font-weight: 400;
     color: black;
 }
 
@@ -24,6 +28,7 @@ footer>p>a:active {
 
 body {
     background-color: rgb(180, 180, 180);
+    font-family: calibri;
 }
 
 header>h3 {
@@ -34,13 +39,14 @@ header>h3 {
 
 fieldset {
     margin-top: 60px;
+    margin-bottom: 30px;
     border: #EFF396 solid 4px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-    background-color: rgb(241, 235, 235);
+    background-color: rgb(219, 214, 214);
 }
 
 legend {
@@ -134,8 +140,62 @@ button {
     -o-transform: translateY(3px);
 }
 
+#reset-button {
+    background-color: rgb(255, 37, 37);
+}
+
+#reset-button:hover {
+    background-color: rgb(209, 31, 31);
+}
+
+#reset-button:active {
+    background-color: rgb(160, 26, 26);
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+}
+
 #explain {
     justify-content: center;
     text-align: center;
     margin-bottom: 50px;
+}
+
+/*responsif*/
+
+/* Untuk perangkat berukuran kecil, misalnya ponsel */
+@media only screen and (max-width: 600px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .hide-on-small {
+        display: none;
+    }
+}
+
+/* Untuk perangkat berukuran sedang, misalnya tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .container {
+        width: 60%;
+    }
 }
