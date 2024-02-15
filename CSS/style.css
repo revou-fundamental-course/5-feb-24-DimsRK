@@ -63,6 +63,10 @@ fieldset>p {
     padding: 5px;
 }
 
+.formulaList {
+    list-style-type: none;
+}
+
 #input-section {
     display: block;
 }
