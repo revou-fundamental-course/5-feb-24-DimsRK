@@ -6,15 +6,20 @@ function celciusToFahrenheit () {
       }
     
     var fahrenheit = (tempt * 9/5) + 32;
+    var temptPlus = tempt * 9;
+    var temptPlusOne = temptPlus / 5;
     fahrenheit = fahrenheit.toFixed(2);
     console.log(fahrenheit)
     document.getElementById("output").innerHTML = fahrenheit + "°F"
     document.getElementById("explain1").innerHTML = "diketahui :"
-    document.getElementById("explain2").innerHTML = "°C=" + tempt
-    document.getElementById("explain3").innerHTML = "Rumus konversi °C ke °F adalah : °F=(°C x 9/5) + 32"
+    document.getElementById("explain2").innerHTML = "°C = " + tempt
+    document.getElementById("explain3").innerHTML = "Rumus konversi °C ke °F adalah : °F = (°C x 9/5) + 32"
     document.getElementById("explain4").innerHTML = "Maka, perhitungannya adalah sebagai berikut :"
-    document.getElementById("explain5").innerHTML = "(" + tempt + "°C" + "* 9/5) + 32 =" + fahrenheit + "°F"
-    document.getElementById("explain6").innerHTML = "Jadi," + tempt + "°C =" + fahrenheit + "°F" 
+    document.getElementById("explain5").innerHTML = "°F = " + "(" + tempt + "°C x 9/5) + 32"
+    document.getElementById("explain6").innerHTML = "°F = " + "(" + temptPlus + "/ 5) + 32" 
+    document.getElementById("explain7").innerHTML = "°F = " + temptPlusOne + " + 32"
+    document.getElementById("explain8").innerHTML = "°F = " + fahrenheit
+    document.getElementById("explain9").innerHTML = "Jadi, " + tempt + "°C = " + fahrenheit + "°F" 
 }
 
 function fahrenheitToCelcius () {
@@ -25,15 +30,20 @@ function fahrenheitToCelcius () {
       }
     
     var celcius = (tempt - 32) * 5/9;
+    var temptMin = tempt - 32;
+    var temptMinOne = temptMin * 5;
     celcius = celcius.toFixed(2);
     console.log(celcius)
     document.getElementById("output").innerHTML = celcius + "°C"
     document.getElementById("explain1").innerHTML = "diketahui :"
-    document.getElementById("explain2").innerHTML = "°F=" + tempt
-    document.getElementById("explain3").innerHTML = "Rumus konversi °F ke °C adalah : °C=(°F-32) x 5/9"
+    document.getElementById("explain2").innerHTML = "°F = " + tempt
+    document.getElementById("explain3").innerHTML = "Rumus konversi °F ke °C adalah : °C = (°F - 32) x 5/9"
     document.getElementById("explain4").innerHTML = "Maka, perhitungannya adalah sebagai berikut :"
-    document.getElementById("explain5").innerHTML = "(" + tempt + "°F" + "- 32) x 5/9 =" + celcius + "°C"
-    document.getElementById("explain6").innerHTML = "Jadi," + tempt + "°F =" + celcius + "°C" 
+    document.getElementById("explain5").innerHTML = "°C = " + "(" + tempt + "°F" + " - 32) x 5/9"
+    document.getElementById("explain6").innerHTML = "°C = " + temptMin + " x 5/9"
+    document.getElementById("explain7").innerHTML = "°C = " + temptMinOne + "/9"
+    document.getElementById("explain8").innerHTML = "°C = " + celcius
+    document.getElementById("explain9").innerHTML = "Jadi, " + tempt + "°F = " + celcius + "°C" 
 }
 
 function reset () {
@@ -45,4 +55,7 @@ function reset () {
     document.getElementById("explain4").innerHTML = "";
     document.getElementById("explain5").innerHTML = "";
     document.getElementById("explain6").innerHTML = "";
+    document.getElementById("explain7").innerHTML = "";
+    document.getElementById("explain8").innerHTML = "";
+    document.getElementById("explain9").innerHTML = "";
 }
