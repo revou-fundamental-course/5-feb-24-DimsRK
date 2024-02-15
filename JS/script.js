@@ -21,6 +21,7 @@ function celciusToFahrenheit () {
     document.getElementById("explain8").innerHTML = "°F = " + temptPlusOne + " + 32"
     document.getElementById("explain9").innerHTML = "°F = " + fahrenheit
     document.getElementById("explain10").innerHTML = "Jadi, " + tempt + "°C = " + fahrenheit + "°F" 
+    showElements()
 }
 
 function fahrenheitToCelcius () {
@@ -46,6 +47,14 @@ function fahrenheitToCelcius () {
     document.getElementById("explain8").innerHTML = "°C = " + temptMinOne + "/9"
     document.getElementById("explain9").innerHTML = "°C = " + celcius
     document.getElementById("explain10").innerHTML = "Jadi, " + tempt + "°F = " + celcius + "°C" 
+    showElements()
+}
+
+function showElements() {
+  var answerDivs = document.getElementsByClassName("answer");
+  for (var i = 0; i < answerDivs.length; i++) {
+      answerDivs[i].style.display = "block"; 
+  }
 }
 
 function reset () {
@@ -61,4 +70,12 @@ function reset () {
     document.getElementById("explain8").innerHTML = "";
     document.getElementById("explain9").innerHTML = "";
     document.getElementById("explain10").innerHTML = "";
+    hideElements()
+}
+
+function hideElements() {
+  var answerDivs = document.getElementsByClassName("answer");
+  for (var i = 0; i < answerDivs.length; i++) {
+      answerDivs[i].style.display = "none"; 
+  }
 }

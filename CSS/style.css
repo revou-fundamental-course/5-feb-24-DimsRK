@@ -162,6 +162,10 @@ button {
     -o-transform: translateY(3px);
 }
 
+.answer {
+    display: none;
+}
+
 #explain {
     justify-content: center;
     text-align: center;
