@@ -8,6 +8,8 @@ function celciusToFahrenheit () {
     var fahrenheit = (tempt * 9/5) + 32;
     var temptPlus = tempt * 9;
     var temptPlusOne = temptPlus / 5;
+    temptPlus = temptPlus.toFixed(2);
+    temptPlusOne = temptPlusOne.toFixed(2);
     fahrenheit = fahrenheit.toFixed(2);
     console.log(fahrenheit)
     document.getElementById("output").innerHTML = fahrenheit + "°F"
@@ -34,6 +36,8 @@ function fahrenheitToCelcius () {
     var celcius = (tempt - 32) * 5/9;
     var temptMin = tempt - 32;
     var temptMinOne = temptMin * 5;
+    temptMin = temptMin.toFixed(2);
+    temptMinOne = temptMinOne.toFixed(2);
     celcius = celcius.toFixed(2);
     console.log(celcius)
     document.getElementById("output").innerHTML = celcius + "°C"
